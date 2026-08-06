@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Tania Cahyani Putri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span>Tania Cahyani Putri</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="sections/experience/experience.html">Pengalaman</a>
+                <a href="sections/projects/projects.html">Proyek</a>
+                <a href="sections/certificates/certificates.html">Sertifikat</a>
+                <a href="#contact" class="btn-nav">Kontak</a>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Halo, Selamat Datang 👋</span>
+                <h1>Saya <span class="highlight">Tania Cahyani Putri</span></h1>
+                <p class="hero-subtitle">Mahasiswa Teknik Informatika & Data Analyst / Machine Learning </p>
+                <p class="hero-desc">Mahasiswa S1 Teknik Informatika Universitas Kebangsaan Republik Indonesia dengan IPK 3.95 / 4.00 yang memiliki ketertarikan pada bidang pengolahan data, analisis data, dan teknologi informasi. Terbiasa mengelola data secara terstruktur, melakukan analisis, serta menyajikan hasil informasi secara sistematis. Memiliki kemampuan berpikir analitis, teliti, dan bertanggung jawab dalam menyelesaikan pekerjaan, serta berkomitmen mengembangkan kompetensi untuk mendukung pengambilan keputusan berbasis data.</p>
+                <div class="hero-buttons">
+                    <a href="sections/projects/projects.html" class="btn btn-primary">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="blob-card">
+                    <img src="assets/images/profile.jpg" alt="Tania Cahyani Putri" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Saya</h2>
+                <p>Mengenal lebih dekat latar belakang, pendidikan, dan keahlian saya</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Profil Pribadi</h3>
+                    <p>Mahasiswa Semester 6 S1 Teknik Informatika di Universitas Kebangsaan Republik Indonesia dengan pencapaian akademis unggul (IPK 3.95 / 4.00). Memiliki pengalaman profesional melalui magang di Badan Pusat Statistik (BPS) Provinsi Jawa Barat, serta aktif merancang dan mengembangkan proyek berbasis Machine Learning dan Internet of Things (IoT).Didukung oleh keahlian teknis yang kuat dalam pengolahan data—meliputi pemograman Python, manajemen basis data SQL & MySQL, Data Cleaning, Data Matching, hingga pengolahan tingkat lanjut menggunakan Microsoft Excel—berkomitmen untuk menghadirkan solusi berbasis data yang akurat, sistemktis, dan bernilai strategis.</p>
+                    <div class="skills-chips">
+                        <span>Python</span>
+                        <span>SQL & MySQL</span>
+                        <span>Data Cleaning</span>
+                        <span>Machine Learning</span>
+                        <span>Microsoft Excel</span>
+                        <span>Data Matching</span>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card clickable-card" onclick="openTranscriptModal()">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Pendidikan</h4>
+                        <p>Universitas Kebangsaan Republik Indonesia</p>
+                        <p>Semester 6</p>
+                        <p>S1 Teknik Informatika (IPK 3.95)</p>
+                        <span class="card-hint">
+                            <span>Lihat Transkrip Nilai (Foto)</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                    <div class="info-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Keahlian</h4>
+                    <p style="font-weight: 600; color: var(--text-dark); margin-bottom: 4px;">Data Processing & Data Analyst</p>
+                    <p style="font-size: 0.88rem; color: var(--text-muted);">Spesialisasi pengolahan data statistik, pemodelan prediktif, serta analisis berbasis data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Saya</h2>
+                <p>Mari berdiskusi untuk kolaborasi, magang, atau proyek berbasis data</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>taniacahyaniputri@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Bandung, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>www.linkedin.com/in/taniacahyani-putri-70900b276</p>
+                        </div>
+                    </div>
+                    <!-- Tambahan Instagram di Bagian Kontak -->
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p><a href="https://www.instagram.com/tanzz.03?igsh=dmNnMGt6dWNlNGln" target="_blank" style="color: inherit; text-decoration: none;">@tanzz.03</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Tania Cahyani Putri. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/taniacahyani-putri-70900b276" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/tanzz.03?igsh=dmNnMGt6dWNlNGln" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Transkrip Nilai (Menggunakan Foto) -->
+    <div id="transcriptModal" class="modal">
+        <div class="modal-content" style="max-width: 700px; text-align: center;">
+            <span class="close-btn" onclick="closeTranscriptModal()">&times;</span>
+            <div class="modal-header">
+                <h3>Transkrip Nilai - S1 Teknik Informatika</h3>
+                <p>Universitas Kebangsaan Republik Indonesia | IPK: 3.95 / 4.00</p>
+            </div>
+            <div class="modal-body">
+                <!-- Tampilan Foto Transkrip -->
+                <img src="assets/images/transkrip_nilai.png" alt="Transkrip Nilai Tania" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 15px;">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
