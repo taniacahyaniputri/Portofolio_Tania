@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Proyek - Tania Cahyani Putri</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/responsive.css">
 </head>
+
 <body>
 
+    <!-- =========================
+         NAVBAR
+    ========================== -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="../../index.html" class="logo"><span>Tania Cahyani Putri</span></a>
+
+            <a href="../../index.html" class="logo">
+                <span>Tania Cahyani Putri</span>
+            </a>
+
             <nav class="nav-menu">
                 <a href="../../index.html">Beranda</a>
                 <a href="../../index.html#about">Tentang</a>
@@ -22,126 +40,776 @@
                 <a href="../certificates/certificates.html">Sertifikat</a>
                 <a href="../../index.html#contact" class="btn-nav">Kontak</a>
             </nav>
+
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
+
         </div>
     </header>
 
+
+    <!-- =========================
+         PROJECT SECTION
+    ========================== -->
     <section style="padding: 140px 0 100px; background-color: var(--bg-primary);">
+
         <div class="container">
+
+            <!-- Section Title -->
             <div class="section-title">
+
                 <h2>Proyek & Riset Pilihan</h2>
-                <p>Dokumentasi foto poster riset, tautan implementasi Google Colab, serta dokumentasi proyek pilihan</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-                
-                <!-- Proyek 1: NutriGuard (Lampiran Foto) -->
-                <div style="background: var(--bg-white); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="display: inline-block; background-color: var(--soft-blue); color: var(--primary-blue); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Featured Research (Foto)</span>
-                        <h3 style="margin-bottom: 10px; font-size: 1.2rem;">NutriGuard: Identifikasi Risiko Stunting (Random Forest)</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Sistem pendukung keputusan berbasis Machine Learning (Random Forest dengan akurasi 99,19%) untuk identifikasi dini risiko stunting balita.</p>
-                    </div>
-                    <div>
-                        <a href="../../assets/images/nutriguard_poster.png" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 10px 14px; width: 100%; justify-content: center;">
-                            <i class="fas fa-image"></i> Lihat Foto Poster NutriGuard
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Proyek 2: Time Series Bandara Husein (Google Colab) -->
-                <div style="background: var(--bg-white); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="display: inline-block; background-color: var(--bg-primary); color: var(--text-muted); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Google Colab</span>
-                        <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Analisis Time Series – Prediksi Penumpang Bandara</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Pemodelan SARIMAX / Auto-ARIMA untuk prediksi jumlah penumpang Bandara Husein Sastranegara (2015-2026) dengan uji ADF.</p>
-                    </div>
-                    <div>
-                        <a href="https://colab.research.google.com/drive/1NbbqWzCFUcTzbwEiB3W0OZ-cM6ulkfPU" target="_blank" class="btn btn-outline" style="font-size: 0.85rem; padding: 10px 14px; width: 100%; justify-content: center;">
-                            <i class="fas fa-code"></i> Buka Google Colab
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Proyek 3: Deteksi TBC SVM (Google Colab) -->
-                <div style="background: var(--bg-white); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="display: inline-block; background-color: var(--bg-primary); color: var(--text-muted); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Google Colab</span>
-                        <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Deteksi Penyakit Tuberkulosis (TBC) via SVM</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Model klasifikasi menggunakan Support Vector Machine (SVM) lengkap dengan pembersihan data dan analisis eksploratif.</p>
-                    </div>
-                    <div>
-                        <a href="https://colab.research.google.com/drive/1zwcV2InSb9ZCkv4oNEGBuF1-wxA6dSix" target="_blank" class="btn btn-outline" style="font-size: 0.85rem; padding: 10px 14px; width: 100%; justify-content: center;">
-                            <i class="fas fa-code"></i> Buka Google Colab
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Proyek 4: Tong Sampah IoT STEM -->
-                <div style="background: var(--bg-white); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="display: inline-block; background-color: var(--bg-primary); color: var(--text-muted); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Fully Funded STEM Project</span>
-                        <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Tong Sampah Pemilah Organik & Non-Organik</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Pengembangan inovasi berbasis teknologi IoT dalam program Fully Funded Bidang Teknokrat (STEM).</p>
-                    </div>
-                </div>
-
-                <!-- Proyek 5: Computer Vision - Deteksi Jarak & Atlet Lari -->
-                <div style="background: var(--bg-white); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="display: inline-block; background-color: var(--soft-blue); color: var(--primary-blue); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Computer Vision / Proyek Kampus</span>
-                        <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Deteksi Jarak & Pengukuran Atlet Lari</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Merancang sistem deteksi berbasis <i>computer vision</i> untuk mengukur jarak dan performa atlet lari secara <i>real-time</i>.</p>
-                        <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 16px; list-style-type: disc; display: flex; flex-direction: column; gap: 6px; margin-bottom: 15px;">
-                            <li>Mengimplementasikan library OpenCV dan model deteksi objek YOLO untuk mendeteksi serta melacak pergerakan atlet.</li>
-                            <li>Mengembangkan algoritma pengukuran jarak berbasis visual guna mendukung analisis performa lari secara sistematis.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-                            <span style="background: var(--bg-primary); color: var(--primary-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">Python</span>
-                            <span style="background: var(--bg-primary); color: var(--primary-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">OpenCV</span>
-                            <span style="background: var(--bg-primary); color: var(--primary-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">YOLO</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyek 6: Software Quality Assurance - Dokumentasi SKPL -->
-                <div style="background: var(--bg-white); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="display: inline-block; background-color: var(--soft-blue); color: var(--primary-blue); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Software Quality Assurance / Proyek Kampus</span>
-                        <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Dokumentasi SKPL & Pengujian Perangkat Lunak</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Menyusun dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) sebagai bagian dari proses pengujian perangkat lunak.</p>
-                        <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 16px; list-style-type: disc; display: flex; flex-direction: column; gap: 6px; margin-bottom: 15px;">
-                            <li>Mendokumentasikan hasil pengujian menggunakan metode Black Box, White Box, dan Grey Box Testing.</li>
-                            <li>Menyusun laporan SKPL yang terstruktur sebagai acuan kualitas dan standar pengembangan perangkat lunak.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-                            <span style="background: var(--bg-primary); color: var(--primary-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">SQA</span>
-                            <span style="background: var(--bg-primary); color: var(--primary-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">Black/White/Grey Box</span>
-                            <span style="background: var(--bg-primary); color: var(--primary-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">SKPL</span>
-                        </div>
-                    </div>
-                </div>
+                <p>
+                    Dokumentasi proyek dan riset yang dikerjakan dalam bidang
+                    data, machine learning, computer vision, software quality
+                    assurance, dan teknologi informasi.
+                </p>
 
             </div>
+
+
+            <!-- =========================
+                 PROJECT GRID
+            ========================== -->
+            <div style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 30px;
+            ">
+
+
+                <!-- ==================================
+                     PROYEK 1 - NUTRIGUARD
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--soft-blue);
+                            color: var(--primary-blue);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Featured Research (Foto)
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            NutriGuard: Identifikasi Risiko Stunting
+                            (Random Forest)
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 20px;
+                        ">
+                            Sistem pendukung keputusan berbasis Machine Learning
+                            menggunakan Random Forest dengan akurasi 99,19%
+                            untuk identifikasi dini risiko stunting balita.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <a href="../../assets/images/nutriguard_poster.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                            style="
+                                font-size: 0.85rem;
+                                padding: 10px 14px;
+                                width: 100%;
+                                justify-content: center;
+                            ">
+
+                            <i class="fas fa-image"></i>
+                            Lihat Foto Poster NutriGuard
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     PROYEK 2 - TIME SERIES
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--bg-primary);
+                            color: var(--text-muted);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Google Colab
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            Analisis Time Series –
+                            Prediksi Penumpang Bandara
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 20px;
+                        ">
+                            Pemodelan SARIMAX / Auto-ARIMA untuk prediksi
+                            jumlah penumpang Bandara Husein Sastranegara
+                            periode 2015–2026 dengan uji ADF.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <a href="https://colab.research.google.com/drive/1NbbqWzCFUcTzbwEiB3W0OZ-cM6ulkfPU"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                            style="
+                                font-size: 0.85rem;
+                                padding: 10px 14px;
+                                width: 100%;
+                                justify-content: center;
+                            ">
+
+                            <i class="fas fa-code"></i>
+                            Buka Google Colab
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     PROYEK 3 - TBC SVM
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--bg-primary);
+                            color: var(--text-muted);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Google Colab
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            Deteksi Penyakit Tuberkulosis (TBC)
+                            via SVM
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 20px;
+                        ">
+                            Model klasifikasi menggunakan Support Vector
+                            Machine (SVM) lengkap dengan pembersihan data
+                            dan analisis eksploratif.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <a href="https://colab.research.google.com/drive/1zwcV2InSb9ZCkv4oNEGBuF1-wxA6dSix"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                            style="
+                                font-size: 0.85rem;
+                                padding: 10px 14px;
+                                width: 100%;
+                                justify-content: center;
+                            ">
+
+                            <i class="fas fa-code"></i>
+                            Buka Google Colab
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     PROYEK 4 - TONG SAMPAH IoT
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--bg-primary);
+                            color: var(--text-muted);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Fully Funded STEM Project
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            Tong Sampah Pemilah
+                            Organik & Non-Organik
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 20px;
+                        ">
+                            Pengembangan inovasi berbasis teknologi IoT
+                            dalam program Fully Funded Bidang Teknokrat
+                            (STEM).
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     PROYEK 5 - COMPUTER VISION
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--soft-blue);
+                            color: var(--primary-blue);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Computer Vision / Proyek Kampus
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            Deteksi Jarak & Pengukuran
+                            Atlet Lari
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 15px;
+                        ">
+                            Merancang sistem deteksi berbasis
+                            <i>computer vision</i> untuk mengukur jarak
+                            dan performa atlet lari secara
+                            <i>real-time</i>.
+                        </p>
+
+                        <ul style="
+                            color: var(--text-muted);
+                            font-size: 0.9rem;
+                            padding-left: 16px;
+                            list-style-type: disc;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            margin-bottom: 15px;
+                        ">
+
+                            <li>
+                                Mengimplementasikan library OpenCV dan
+                                model deteksi objek YOLO untuk mendeteksi
+                                serta melacak pergerakan atlet.
+                            </li>
+
+                            <li>
+                                Mengembangkan algoritma pengukuran jarak
+                                berbasis visual guna mendukung analisis
+                                performa lari secara sistematis.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <div style="
+                            display: flex;
+                            gap: 6px;
+                            flex-wrap: wrap;
+                        ">
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Python
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                OpenCV
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                YOLO
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     PROYEK 6 - SOFTWARE QUALITY ASSURANCE
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--soft-blue);
+                            color: var(--primary-blue);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Software Quality Assurance /
+                            Proyek Kampus
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            Dokumentasi SKPL &
+                            Pengujian Perangkat Lunak
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 15px;
+                        ">
+                            Menyusun dokumen Spesifikasi Kebutuhan
+                            Perangkat Lunak (SKPL) sebagai bagian dari
+                            proses pengujian perangkat lunak.
+                        </p>
+
+                        <ul style="
+                            color: var(--text-muted);
+                            font-size: 0.9rem;
+                            padding-left: 16px;
+                            list-style-type: disc;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            margin-bottom: 15px;
+                        ">
+
+                            <li>
+                                Mendokumentasikan hasil pengujian
+                                menggunakan metode Black Box, White Box,
+                                dan Grey Box Testing.
+                            </li>
+
+                            <li>
+                                Menyusun laporan SKPL yang terstruktur
+                                sebagai acuan kualitas dan standar
+                                pengembangan perangkat lunak.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <div style="
+                            display: flex;
+                            gap: 6px;
+                            flex-wrap: wrap;
+                        ">
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                SQA
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Black/White/Grey Box
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                SKPL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     PROYEK 7 - BANKING / BANK SENTRAL
+                =================================== -->
+                <div style="
+                    background: var(--bg-white);
+                    padding: 25px;
+                    border-radius: 12px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                ">
+
+                    <div>
+
+                        <span style="
+                            display: inline-block;
+                            background-color: var(--soft-blue);
+                            color: var(--primary-blue);
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        ">
+                            Machine Learning / Personal Project
+                        </span>
+
+                        <h3 style="
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                        ">
+                            Prediksi Arah Pertumbuhan Kredit
+                            Perbankan Menggunakan Machine Learning
+                        </h3>
+
+                        <p style="
+                            color: var(--text-muted);
+                            font-size: 0.95rem;
+                            margin-bottom: 15px;
+                        ">
+                            Proyek machine learning yang mengolah indikator
+                            makroekonomi dan perbankan untuk melakukan
+                            klasifikasi arah pertumbuhan kredit perbankan.
+                        </p>
+
+                        <ul style="
+                            color: var(--text-muted);
+                            font-size: 0.9rem;
+                            padding-left: 16px;
+                            list-style-type: disc;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            margin-bottom: 15px;
+                        ">
+
+                            <li>
+                                Menggunakan 119 observasi data bulanan
+                                dengan beberapa indikator makroekonomi
+                                dan perbankan.
+                            </li>
+
+                            <li>
+                                Melakukan preprocessing data dan pembagian
+                                data training dan testing dengan rasio 80:20.
+                            </li>
+
+                            <li>
+                                Membandingkan model Logistic Regression,
+                                Decision Tree, dan Random Forest.
+                            </li>
+
+                            <li>
+                                Melakukan evaluasi model menggunakan
+                                Accuracy, Precision, Recall, F1-Score,
+                                Confusion Matrix, serta analisis
+                                feature importance.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div>
+
+                        <!-- TAGS -->
+                        <div style="
+                            display: flex;
+                            gap: 6px;
+                            flex-wrap: wrap;
+                            margin-bottom: 15px;
+                        ">
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Python
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Pandas
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Scikit-learn
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Machine Learning
+                            </span>
+
+                            <span style="
+                                background: var(--bg-primary);
+                                color: var(--primary-blue);
+                                padding: 2px 8px;
+                                border-radius: 4px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            ">
+                                Data Analysis
+                            </span>
+
+                        </div>
+
+
+                        <!-- GOOGLE COLAB BUTTON -->
+                        <a href="https://colab.research.google.com/drive/1ZjZhA61UyaW0uoFcwqV8A5TYyycP80on#scrollTo=EkfEHVWgUqfH"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                            style="
+                                font-size: 0.85rem;
+                                padding: 10px 14px;
+                                width: 100%;
+                                justify-content: center;
+                            ">
+
+                            <i class="fas fa-code"></i>
+                            Buka Google Colab
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </div>
+
     </section>
 
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer>
+
         <div class="container footer-content">
-            <p>&copy; 2026 Tania Cahyani Putri. All rights reserved.</p>
+
+            <p>
+                &copy; 2026 Tania Cahyani Putri.
+                All rights reserved.
+            </p>
+
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/taniacahyani-putri-70900b276" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/tanzz.03?igsh=dmNnMGt6dWNlNGln" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.linkedin.com/in/taniacahyani-putri-70900b276"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="https://www.instagram.com/tanzz.03?igsh=dmNnMGt6dWNlNGln"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
             </div>
+
         </div>
+
     </footer>
 
+
+    <!-- JavaScript -->
     <script src="../../js/script.js"></script>
+
 </body>
+
 </html>
